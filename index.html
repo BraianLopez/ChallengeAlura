@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es-la">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="titulo__header">
+            <h2 class="titulo__header--rojo">Encriptador</h2>
+            <h3 class="titulo__header--blanco">De Texto</h3>
+        </div>
+    </header>
+    <main>
+        <section class="encriptador">
+            <textarea cols="30" rows="10" class="texto-a-encriptar"
+                placeholder="¿Qué texto querés encriptar?"></textarea>
+            <div class="informacion">Solo letras minusculas sin acentos ni caracteres especiales</div>
+            <div class="encriptador__botones">
+                <button onclick="btnEncriptar()" class="encriptador__botones--encriptar">Encriptar</button>
+                <button onclick="btnDesencriptar()" class="encriptador__botones--desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section class="visualizador">
+            <textarea cols="20" rows="10" class="texto-encriptado"></textarea>
+            <div class="visualizador__botones"><button onclick="copiar()" class="visualizador__botones--copiar">Copiar</button></div>
+        </section>
+    </main>
+    <footer><a href="https://www.linkedin.com/in/braian-lopez/">
+            <img id="logo-linkedin" src="./images/linkedin-logo.webp" alt="logo de linkedin">Braian Emmanuel Lopez
+        </a><a href="https://github.com/BraianLopez">Braian Emmanuel Lopez</a></footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
